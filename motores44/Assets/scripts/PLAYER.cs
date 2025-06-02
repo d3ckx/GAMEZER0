@@ -1,14 +1,16 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PLAYER : MonoBehaviour
 {
-   
+    public int numero;
     public float velocidade = 0.7f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       
+        numero = 0;
+
     }
 
     // Update is called once per frame
@@ -28,6 +30,5 @@ public class PLAYER : MonoBehaviour
                 gameObject.transform.position += new Vector3(0, velocidade * Time.deltaTime, 0); // Corrigido a linha aqui
         }
     }
-        
     
 
